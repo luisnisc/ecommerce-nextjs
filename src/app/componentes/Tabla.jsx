@@ -253,7 +253,7 @@ export default function Tabla({ initialData }) {
         </table>
         
       </div>
-      <div className="flex items-centerw-max mt-1 justify-start ml-10">
+      <div className="flex items-centerw-max mt-1 justify-start">
           {currentPage > 1 && (
             <button onClick={() => setCurrentPage(currentPage - 1)}>
               <ArrowCircleLeftIcon />
