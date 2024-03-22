@@ -159,7 +159,7 @@ export default function Tabla({ initialData }) {
       >
         JSON
       </button>
-      <div className="flex justify-center items-center content-center w-max ">
+      <div className="flex justify-center items-center content-center  ">
         <table>
           <thead>
             <tr className="bg-gray-800">
@@ -253,7 +253,7 @@ export default function Tabla({ initialData }) {
         </table>
         
       </div>
-      <div className="flex items-centerw-max mt-1 justify-start">
+      <div className="flex items-centerw-max mt-1 justify-start ml-10">
           {currentPage > 1 && (
             <button onClick={() => setCurrentPage(currentPage - 1)}>
               <ArrowCircleLeftIcon />
