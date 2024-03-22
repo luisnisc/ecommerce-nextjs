@@ -163,8 +163,8 @@ export default function Tabla({ initialData }) {
         <table>
           <thead>
             <tr className="bg-gray-800">
-              <th className="w-2"></th>
-              <th onClick={() => handleSort("id")}>
+              <th className="w-2 text-left px-2"></th>
+              <th className="text-left px-2" onClick={() => handleSort("id")}>
                 ID Producto
                 {sortField === "id" ? (
                   sortDirection === "asc" ? (
@@ -179,7 +179,7 @@ export default function Tabla({ initialData }) {
                   </>
                 )}
               </th>
-              <th onClick={() => handleSort("producto")}>
+              <th className="text-left px-2" onClick={() => handleSort("producto")}>
                 Producto
                 {sortField === "producto" ? (
                   sortDirection === "asc" ? (
@@ -194,7 +194,7 @@ export default function Tabla({ initialData }) {
                   </>
                 )}
               </th>
-              <th onClick={() => handleSort("precio")}>
+              <th className="text-left px-2" onClick={() => handleSort("precio")}>
                 Precio
                 {sortField === "precio" ? (
                   sortDirection === "asc" ? (
@@ -209,7 +209,7 @@ export default function Tabla({ initialData }) {
                   </>
                 )}
               </th>
-              <th onClick={() => handleSort("stock")}>
+              <th className="text-left px-2" onClick={() => handleSort("stock")}>
                 Stock
                 {sortField === "stock" ? (
                   sortDirection === "asc" ? (
@@ -232,7 +232,7 @@ export default function Tabla({ initialData }) {
                 key={product.id}
                 className="hover:bg-gray-700 transition-all"
               >
-                <td>
+                <td className="text-left px-2">
                   <button onClick={() => handleDelete(product.id)}>
                     <DeleteForeverIcon
                       sx={{
@@ -243,10 +243,10 @@ export default function Tabla({ initialData }) {
                     />
                   </button>
                 </td>
-                <td>{product.id}</td>
-                <td>{product.producto}</td>
-                <td>{parseFloat(product.precio).toFixed(2)}€</td>
-                <td>{product.stock}</td>
+                <td className="text-left px-2">{product.id}</td>
+                <td className="text-left px-2">{product.producto}</td>
+                <td className="text-left px-2">{parseFloat(product.precio).toFixed(2)}€</td>
+                <td className="text-left px-2">{product.stock}</td>
               </tr>
             ))}
           </tbody>
