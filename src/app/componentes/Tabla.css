@@ -1,0 +1,50 @@
+#deleteForm {
+    margin-left: -2em;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  #padre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width:max-content ;
+  }
+  
+  
+  table {
+    padding-left: 5px;
+    
+    
+  }
+  th {
+    width: 10em;
+    user-select: none;
+  }
+  
+  tr {
+    min-height: 50px;
+  }
+  .sweet-alert-button {
+    display: block;
+    margin: 0 auto;
+  }
+  .sweet-alert-title,
+  .sweet-alert-content {
+    color: #d1d5db;
+  }
+  #currentPage{
+    user-select: none;
+  }
+  .sweet-alert-text{
+    color: rgb(203, 203, 203);
+  }
+  .delete-icon:hover {
+    color: red;
+  }
